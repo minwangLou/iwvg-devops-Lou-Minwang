@@ -12,7 +12,9 @@
 ### Estado del código
 [![CI](https://github.com/minwangLou/iwvg-devops-Lou-Minwang/actions/workflows/CI.yml/badge.svg)](https://github.com/minwangLou/iwvg-devops-Lou-Minwang/actions/workflows/CI.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=minwangLou_iwvg-devops-Lou-Minwang&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=minwanglou_iwvg-devops-Lou-Minwang)
-[![Render broken](https://iwvg-devops-latest.onrender.com/version-badge)](https://iwvg-devops-latest.onrender.com/swagger-ui.html)
+[![Render broke](https://img.shields.io/badge/Render-Deployed-brightgreen)](https://iwvg-devops-lou-minwang.onrender.com/swagger-ui.html)
+
+
 
 
 ### Tecnologías necesarias
