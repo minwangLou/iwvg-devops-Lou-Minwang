@@ -17,7 +17,7 @@
     <version>5.0.0</version>
     <packaging>jar</packaging>
     <name>${project.groupId}.${project.artifactId}</name>
-    <url>http://github.com/minwangLou/iwvg-devops-Lou-Minwang</url>
+    <url>http://github.com/minwangLou/iwvg-devops-Lou-Minwang</url> 
 
 
 
