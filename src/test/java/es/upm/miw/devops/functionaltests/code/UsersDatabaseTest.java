@@ -24,4 +24,11 @@ class UsersDatabaseTest {
         assertThat(result.getNumerator()).isEqualTo(-1);
         assertThat(result.getDenominator()).isEqualTo(5);
     }
+
+    @Test
+    void testFindUserFamilyNameByAllNegativeSignFractionDistinct() {
+
+        assertThat(db.findUserFamilyNameByAllNegativeSignFractionDistinct().toList())
+                .isEmpty();
+    }
 }
