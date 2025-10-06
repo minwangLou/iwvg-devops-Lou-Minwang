@@ -39,4 +39,14 @@ class UsersDatabaseTest {
                 .containsExactly("5");
     }
 
+    @Test
+    void testFindFractionAdditionByUserId() {
+        UsersDatabase db = new UsersDatabase();
+
+        Fraction result = db.findFractionAdditionByUserId("2");
+
+        assertThat(result.getNumerator()).isEqualTo(218);
+        assertThat(result.getDenominator()).isEqualTo(60);
+    }
+
 }
