@@ -59,4 +59,12 @@ public class UsersDatabase {
                 .findFirst()
                 .orElse(null);
     }
+
+    public Stream<String> findUserFamilyNameByAllNegativeSignFractionDistinct() {
+        return this.findAll()
+                .filter(user -> user.getFractions().stream()
+                        .allMatch(f -> f.getNumerator() * f.getDenominator() < 0)) // 所有分数都为负
+                .map(User::getFamilyName)
+                .distinct();
+    }
 }
