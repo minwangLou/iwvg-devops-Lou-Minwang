@@ -67,4 +67,10 @@ public class UsersDatabase {
                 .map(User::getFamilyName)
                 .distinct();
     }
+
+    public Stream<String> findUserIdByAllProperFraction() {
+        return this.findAll()
+                .filter(user -> user.getFractions().stream().allMatch(Fraction::isProper))
+                .map(User::getId);
+    }
 }

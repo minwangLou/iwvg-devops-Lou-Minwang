@@ -31,4 +31,12 @@ class UsersDatabaseTest {
         assertThat(db.findUserFamilyNameByAllNegativeSignFractionDistinct().toList())
                 .isEmpty();
     }
+
+    @Test
+    void testFindUserIdByAllProperFraction() {
+
+        assertThat(db.findUserIdByAllProperFraction().toList())
+                .containsExactly("5");
+    }
+
 }
