@@ -73,4 +73,11 @@ public class UsersDatabase {
                 .filter(user -> user.getFractions().stream().allMatch(Fraction::isProper))
                 .map(User::getId);
     }
+
+    public Fraction findFractionAdditionByUserId(String id) {
+        return this.findAll()
+                .filter(user -> user.getId().equals(id))
+                .flatMap(user -> user.getFractions().stream())
+                .reduce(new Fraction(0, 1), Fraction::add);
+    }
 }
