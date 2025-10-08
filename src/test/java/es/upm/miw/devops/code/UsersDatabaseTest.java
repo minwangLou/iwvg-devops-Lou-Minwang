@@ -40,6 +40,7 @@ class UsersDatabaseTest {
 
     @Test
     void testFindFractionAdditionByUserId() {
+        
         UsersDatabase db = new UsersDatabase();
 
         Fraction result = db.findFractionAdditionByUserId("2");
