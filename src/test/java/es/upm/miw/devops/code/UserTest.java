@@ -1,6 +1,5 @@
-package es.upm.miw.devops.functionaltests.code;
+package es.upm.miw.devops.code;
 
-import es.upm.miw.devops.code.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

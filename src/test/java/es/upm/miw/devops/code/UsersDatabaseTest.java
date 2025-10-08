@@ -1,5 +1,4 @@
-package es.upm.miw.devops.functionaltests.code;
-import es.upm.miw.devops.code.*;
+package es.upm.miw.devops.code;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
